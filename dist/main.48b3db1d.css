@@ -52,17 +52,63 @@ header .currentDetails, header .searchBar {
   color: white;
 }
 
+.listings {
+  padding: 2rem 0;
+}
 .listings .header {
   display: flex;
   align-items: center;
 }
-.listings .header-viewOptions {
-  margin-left: auto;
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.listings .header .header-title span {
+  color: #565656;
+}
+.listings .listings-grid .listings-grid-element {
+  width: 35%;
+  margin-top: 2rem;
+}
+.listings .listings-grid .listings-grid-element ._image {
+  height: 240px;
+  overflow: hidden;
+}
+.listings .listings-grid .listings-grid-element ._image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.listings .listings-grid .listings-grid-element ._text {
   display: flex;
   align-items: center;
 }
+.listings .listings-grid .listings-grid-element ._text h3 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.listings .listings-grid .listings-grid-element ._text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #565656;
+}
+.listings .listings-grid .listings-grid-element ._text ._rating {
+  margin-left: auto;
+}
+.listings .listings-grid .listings-grid-element ._text ._rating span {
+  height: 40px;
+  width: 40px;
+}
+.listings .header-viewOptions {
+  display: flex;
+  align-items: center;
+  margin: auto 0 auto auto;
+}
 .listings .header-viewOptions .viewAll {
   color: #06c167;
+  padding-right: 2rem;
 }
 .listings .header-viewOptions .viewMore .arrow {
   width: 40px;
@@ -78,6 +124,13 @@ header .currentDetails, header .searchBar {
 }
 .listings .header-viewOptions .viewMore .arrow.dark, .listings .header-viewOptions .viewMore .arrow:hover {
   opacity: 1;
+}
+
+.circe {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
