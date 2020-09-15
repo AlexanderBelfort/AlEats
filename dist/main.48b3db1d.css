@@ -54,9 +54,30 @@ header .currentDetails, header .searchBar {
 
 .listings .header {
   display: flex;
+  align-items: center;
 }
 .listings .header-viewOptions {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.listings .header-viewOptions .viewAll {
+  color: #06c167;
+}
+.listings .header-viewOptions .viewMore .arrow {
+  width: 40px;
+  height: 40px;
+  background: #eeeeee;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.listings .header-viewOptions .viewMore .arrow.dark, .listings .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

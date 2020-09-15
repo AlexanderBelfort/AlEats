@@ -60,8 +60,34 @@ header {
 .listings{
     .header {
         display: flex;
+        align-items: center;
     }
     .header-viewOptions {
         margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        .viewAll {
+            color: #06c167;
+
+        }
+
+        .viewMore {
+            .arrow {
+                width: 40px;
+                height: 40px;
+                background: rgb(238, 238, 238);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                opacity: 0.3;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                &.dark, &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
